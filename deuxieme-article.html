@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Map CSS -->
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
+    />
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+    <!-- Title -->
+    <title>Mon article</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <!-- ICI JE COPIE A LA PLACE DE LA NAVBAR, CELLE DE LA PAGE BLOG de <nav> jusqu'à </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <!-- Brand -->
+        <!-- ajoute un lien sur ton image ici <a href=""> -->
+        <a class="navbar-brand" href="index.html">
+          <div class="avatar avatar-xxl">
+            <!-- change ta photo ici  -->
+            <img
+              src="./assets/img/avatar.png"
+              alt="..."
+              class="avatar-img rounded-circle"
+            />
+          </div>
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse - permet de rendre le menu responsive -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <!-- copie colle ce bloc <li> si tu veux rajouter un lien dans ta navbar -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Blog </a>
+            </li>
+            <!-- jusque là </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"> A propos de moi </a>
+            </li>
+          </ul>
+
+          <!-- Button -->
+          <!-- mets un lien sur le bouton G404 ! -->
+          <a
+            class="navbar-btn btn btn-sm btn-primary lift ms-auto"
+            href="https://intel.com/"
+            target="_blank"
+          >
+            Intel
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- IMAGE -->
+    <!-- ICI DANS LA BALISE <section> je viens modifier l'attribut style pour CHANGER L'IMAGE -->
+    <section
+      data-jarallax
+      data-speed=".8"
+      class="py-12 py-md-15 bg-cover jarallax"
+       style="background-image: url(./assets/img/photos/codeimage.jpg)"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+            <!-- Heading -->
+            <h1 class="display-2 fw-bold text-white"></h1>
+
+            <!-- Text -->
+            <p class="lead mb-0 text-white-75">Mes premiers cours de Javascript.</p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- HEADER -->
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h1 class="display-4 text-center">Exercice Javascript</h1>
+
+            <!-- Text -->
+            <p class="lead mb-7 text-center text-muted">
+             Comment animer un site,
+             <br>
+             avec du Javascript ?
+             <br>
+             Allons-voir ça !
+            </p>
+
+            <!-- Figure -->
+            <figure class="figure mb-7">
+              <!-- Image -->
+              <img
+                class="figure-img img-fluid rounded lift lift-lg"
+                src="assets/img/photos/Capture d’écran 2023-03-25 114800.png"
+                alt="..."
+              />
+
+              <!-- Caption -->
+              <figcaption class="figure-caption text-center">
+                Exemple de code de Javascript 
+              </figcaption>
+            </figure>
+
+            <!-- Meta -->
+            <div class="row align-items-center py-5 border-top border-bottom">
+              <div class="col-auto">
+                <!-- Avatar -->
+                <div class="avatar avatar-lg">
+                  <img
+                    src="assets/img/avatar.png"
+                    alt="..."
+                    class="avatar-img rounded-circle"
+                  />
+                </div>
+              </div>
+              <div class="col ms-n5">
+                <!-- Name -->
+                <h6 class="text-uppercase mb-0">Ron ZED</h6>
+
+                <!-- Date -->
+                <time class="fs-sm text-muted" datetime="2019-05-20">
+                  Publié le 14 janvier 2023
+                </time>
+              </div>
+              <div class="col-auto"></div>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h2 class="fw-bold">Découverte JavaScript:</h2>
+
+            <!-- Text -->
+            <p>
+              JavaScript est un langage de programmation de haut niveau qui est utilisé pour créer des applications web interactives et dynamiques. Il est souvent utilisé en conjonction avec HTML et CSS pour créer des pages web modernes et réactives. Voici quelques-uns des principaux avantages de JavaScript :
+
+            </p>
+            <ul class="mb-0">
+              <li>
+                Facilité d'utilisation : JavaScript est un langage de programmation relativement facile à apprendre et à utiliser. Il est également largement utilisé, ce qui signifie qu'il existe de nombreuses ressources en ligne pour vous aider à apprendre et à résoudre les problèmes.
+              </li>
+              <li class="mt-4">
+                Compatibilité : JavaScript est pris en charge par tous les principaux navigateurs web, ce qui signifie que vous pouvez créer des applications web qui fonctionnent sur toutes les plates-formes et tous les appareils.
+                
+
+              </li>
+              <li class="mt-4">
+                Bibliothèques et frameworks : JavaScript dispose d'un grand nombre de bibliothèques et de frameworks qui permettent de simplifier le développement d'applications web. Par exemple, jQuery est une bibliothèque JavaScript populaire qui permet de manipuler facilement le DOM et de créer des effets visuels.
+              </li>
+              <li class="mt-4">
+                Polyvalence : JavaScript peut être utilisé pour créer une grande variété d'applications web, allant des simples pages web aux applications web complexes.
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-11 col-xl-10">
+            <!-- Slider -->
+            <div
+              data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}'
+            >
+              <div class="w-100">
+                <img
+                  src="./assets/img/photos/capturejs2.png"
+                  alt="..."
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="w-100">
+                <img
+                  src="./assets/img/photos/Codepen4.png"
+                  alt="..."
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="w-100">
+                <img
+                  src="./assets/img/photos/capturjs4.png"
+                  alt="..."
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h3 class="fw-bold"><a href="https://codepen.io" target="_blank">Codepen</a></h3>
+
+            <!-- Text -->
+            <p class="mb-7">
+              Un site dédié a la programmation.
+            </p>
+
+            <!-- Divider -->
+            <hr class="hr-md mb-7" />
+
+            <!-- Blockquote -->
+            <blockquote class="blockquote mb-7">
+              <p class="h2 mb-0 text-center text-primary-desat">
+                Voici certains extraits de mes projets sur codepen. 
+              </p>
+            </blockquote>
+
+            <!-- Divider -->
+            <hr class="hr-md mb-7" />
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SI TU N'AS RIEN D'AUTRE A RAJOUTER ESSAYE DE SUPPRIMER LA <section> de dessous Ctrl S et regarde le résultat -->
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <!-- Heading -->
+            <h3 class="fw-bold">Résumé:</h3>
+
+            <!-- Text -->
+            <p>
+              En conclusion, JavaScript est un langage de programmation incontournable pour tout développeur web. Il permet de créer des sites web dynamiques et interactifs, d'ajouter des fonctionnalités à des pages statiques et de rendre l'expérience utilisateur plus agréable. Avec l'évolution constante des technologies web, JavaScript continue de s'améliorer et de s'adapter aux besoins des développeurs. Bien qu'il puisse être difficile à maîtriser, il existe de nombreuses ressources en ligne pour apprendre et améliorer ses compétences en JavaScript. En somme, JavaScript est un outil puissant et essentiel pour tout développeur web moderne.
+
+            </p>
+           
+
+              
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        <svg
+          viewBox="0 0 2880 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <!-- Brand -->
+            <img
+              src="./assets/img/photos/codeurs.jpg"
+              alt="..."
+              class="footer-brand img-fluid mb-2"
+            />
+
+            <!-- Text -->
+            <p class="text-gray-700 mb-2">Les Mécanos du Numérique.</p>
+
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img
+                    src="./assets/img/icons/social/instagram.svg"
+                    class="list-social-icon"
+                    alt="..."
+                  />
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img
+                    src="./assets/img/icons/social/facebook.svg"
+                    class="list-social-icon"
+                    alt="..."
+                  />
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img
+                    src="./assets/img/icons/social/twitter.svg"
+                    class="list-social-icon"
+                    alt="..."
+                  />
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img
+                    src="./assets/img/icons/social/pinterest.svg"
+                    class="list-social-icon"
+                    alt="..."
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2"></div>
+          <div class="col-6 col-md-4 col-lg-2"></div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0"></div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-gray-700">Navigation</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="index.html" class="text-reset"> Accueil </a>
+              </li>
+              <li class="mb-3">
+                <a href="mon-premier-article.html" class="text-reset">
+                  Bootstrap
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="mon-second-article-js.html" class="text-reset">
+                  Javascript
+                </a>
+              </li>
+              <li>
+                <a href="le-projet-film.html" class="text-reset">
+                  Projet films
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+  </body>
+</html>
